@@ -1,0 +1,64 @@
+{
+    "id": "e26205f4-e144-4ded-9e64-82ede0b26e33",
+    "href": "activationAndConfiguration/v2/service/Eline/e26205f4-e144-4ded-9e64-82ede0b26e33",
+    "name": "Eline Service TMF Instance",
+    "serviceCharacteristic": [
+        {
+            "name": "access",
+            "value": {
+                "addressId": 123456789,
+                "copperPairId": "CPI123456789012",
+                "features": {
+                    "serviceRestorationSLA": "Enhanced - 12 (24/7)"
+                }
+            },
+            "___patchable___": false
+        },
+        {
+            "name": "edge",
+            "value": {
+                "vpnName": "N1234567R",
+                "peName": "EXV9-E-070",
+                "ipAddressing": {
+                    "enableAddressFamily": "IPv4 Only",
+                    "localIpAddress": "141.168.206.78",
+                    "netmask": "255.255.255.252",
+                    "vrfLoopbackIpv4Address": "144.133.128.133",
+                    "vrfLoopback2Address": "144.133.128.132"
+                },
+                "routing": {
+                    "routeDistinguisher": "1221:1234567",
+                    "bgpGroupNeighbors": [
+                        {
+                            "bgpGroup": "N1234567R_BGP",
+                            "description": "N7654321R_AVC123456789012",
+                            "peerIpAddress": "10.1.1.90",
+                            "localIpAddress": null,
+                            "peerAs": 2324,
+                            "exportPolicy": "DROP_INTERNALS REDIST_ALL",
+                            "importPolicy": "none",
+                            "multihop": false,
+                            "metric": 100,
+                            "holdTimer": "No BFD",
+                            "___patchable___": true
+                        },
+                        {
+                            "bgpGroup": "N1234567R_BGC",
+                            "description": "N7654321R_AVC123456789012",
+                            "peerIpAddress": "10.1.1.90",
+                            "localIpAddress": null,
+                            "peerAs": 2324,
+                            "exportPolicy": "DROP_INTERNALS REDIST_ALL",
+                            "importPolicy": "none",
+                            "multihop": false,
+                            "metric": 100,
+                            "holdTimer": "No BFD",
+                            "___patchable___": false
+                        }
+                    ]
+                }
+            },
+            "___patchable___": true
+        }
+    ]
+}
